@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Definition for the animation of a flashing up arrow. -->
 <animation-list 
     xmlns:android="http://schemas.android.com/apk/res/android" 
     android:id="@+id/flashingArrow"
     android:oneshot="false">
 
-    <item android:drawable="@drawable/uparrow" android:duration="1000" />
-    <item android:drawable="@drawable/empty" android:duration="1000" />
+    <!-- First frame - up arrow image for 1000 milliseconds 
+        (1 second) -->
+    <item 
+        android:drawable="@drawable/uparrow" 
+        android:duration="1000" />
+
+    <!-- Second frame - an empty image for another 1000 milliseconds 
+        (or 1 second) -->
+    <item 
+        android:drawable="@drawable/empty" 
+        android:duration="1000" />
 </animation-list>

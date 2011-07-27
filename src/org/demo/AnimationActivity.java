@@ -7,11 +7,23 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
+/**
+ * Simple {@link Activity} that demonstrates the use of frame animation to 
+ * perform simple animation. When running the example, click on the rocket to
+ * start the animation. Click on it again to stop the animation.  
+ * 
+ * @author Kah
+ */
 public class AnimationActivity extends Activity {
+	
+	/**
+	 * Click listener that will start and stop the animation of the arrow.
+	 */
 	private final OnClickListener trigger = new OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
+			
 			final AnimationDrawable animation = (AnimationDrawable) arrowView.getDrawable();
 			
 			if (arrowView.getVisibility() != View.VISIBLE) {
